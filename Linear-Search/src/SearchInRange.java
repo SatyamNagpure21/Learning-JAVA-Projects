@@ -1,0 +1,21 @@
+public class SearchInRange {
+    public static void main(String[] args) {
+        int[] arr = {12 ,32 ,44 ,56 ,70 ,-9 ,43 ,123};
+        System.out.println(linearsearch(arr ,-9,1,5 ));
+    }
+
+    static int linearsearch(int[] arr,int target ,int start , int end ){
+        if(arr.length == 0){
+            return -1;
+        }
+        for (int i = start; i < end ; i++) {
+            if(arr[i] == target ){
+                return i ;
+            }
+        }
+
+        return -1;
+    }
+
+
+}
